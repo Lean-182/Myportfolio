@@ -36,6 +36,19 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 
+
+function compararNúmeros(){
+  for(let númeroAComparar = 1; númeroAComparar <= 100; númeroAComparar++){
+   if(númeroAComparar % 3 == 0 && númeroAComparar % 5 == 0){
+    console.log(`${númeroAComparar} FizzBuzz`)
+   } else if(númeroAComparar % 3 == 0){
+    console.log(`${númeroAComparar} Fizz`)
+   } else if(númeroAComparar % 5 == 0){
+    console.log(`${númeroAComparar} Buzz`)
+   } else {console.log(`${númeroAComparar}`)}
+  }
+ }
+
 const Navbar = props => {
   const { path } = props
 
@@ -74,12 +87,12 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">
+          </LinkItem> */}
+          {/* <LinkItem href="https://uses.craftz.dog/">
             Uses
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/Lean-182/Myportfolio"
@@ -112,15 +125,15 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                {/* <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <NextLink href="https://uses.craftz.dog/" passHref>
+                </NextLink> */}
+                {/* <NextLink href="https://uses.craftz.dog/" passHref>
                   <MenuItem as={Link}>Uses</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/Lean-182/Myportfolio"
                 >
                   View Source
                 </MenuItem>
