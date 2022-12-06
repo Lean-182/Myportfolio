@@ -3,8 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/Alien1.png'
-import thumbMargelo from '../public/images/works/Alien1.png'
+import AlienStreat from '../public/images/works/Alien1.png'
+import DogsBread from '../public/images/works/DogsMain.png'
 
 
 
@@ -17,7 +17,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="DogsBread" title="DogsBread" thumbnail={DogsBread}>
             A Breed application where you can find your fauvurite pet for your home.
           </WorkGridItem>
         </Section>
@@ -34,7 +34,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
+          <WorkGridItem id="AlienStreat" thumbnail={AlienStreat} title="AlienStreat">
             An e-commerce that provide a varity of functions like, Admin magement, purches inside the page, Profile administration by the user, third party authorization and much more.
           </WorkGridItem>
         </Section>
