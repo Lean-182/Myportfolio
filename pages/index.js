@@ -114,6 +114,10 @@ const Home = () => (
           <BioYear>2015</BioYear>
           Work in a microenterprise on electrical solutios. 
         </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Grad as Fullstack web developer Henry's bootcamp. 
+        </BioSection>
       </Section>
 
       <Section delay={0.3}>
